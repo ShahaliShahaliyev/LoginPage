@@ -36,6 +36,7 @@ namespace LoginPage
             if (user.Sifre.Length < 8 || user.IstifadeciAdi.Length == 0)
             {
                 MessageBox.Show("İSTİFADƏÇİ ADI OLMALIDIR VƏ ŞİFRƏ ƏN AZ 8 SİMVOL OLMALIDIR!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                label1.Text = "ən az 8 simvol daxil edin!";
 
                 if (user.Ad.Length == 0 || user.Soyad.Length == 0 || user.Cins.Length == 0)
                 {
@@ -50,6 +51,7 @@ namespace LoginPage
             }
             else
             {
+                label1.Text = "";
 
                 CreateNewAccount(user);
 

@@ -45,9 +45,9 @@
             this.NAIstAd = new System.Windows.Forms.GroupBox();
             this.NAIsAd = new System.Windows.Forms.ComboBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.cbShow = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.NASifr = new System.Windows.Forms.TextBox();
-            this.cbShow = new System.Windows.Forms.CheckBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -275,28 +275,6 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Şifrə";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(8, 73);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(179, 17);
-            this.label1.TabIndex = 27;
-            this.label1.Text = "Ən az 8 simvol daxil edilməli";
-            // 
-            // NASifr
-            // 
-            this.NASifr.Location = new System.Drawing.Point(8, 31);
-            this.NASifr.Margin = new System.Windows.Forms.Padding(4);
-            this.NASifr.Multiline = true;
-            this.NASifr.Name = "NASifr";
-            this.NASifr.PasswordChar = '*';
-            this.NASifr.Size = new System.Drawing.Size(403, 29);
-            this.NASifr.TabIndex = 7;
-            // 
             // cbShow
             // 
             this.cbShow.AutoSize = true;
@@ -307,6 +285,27 @@
             this.cbShow.Text = "Göstər";
             this.cbShow.UseVisualStyleBackColor = true;
             this.cbShow.CheckedChanged += new System.EventHandler(this.cbShow_CheckedChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(8, 73);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 17);
+            this.label1.TabIndex = 27;
+            // 
+            // NASifr
+            // 
+            this.NASifr.Location = new System.Drawing.Point(8, 31);
+            this.NASifr.Margin = new System.Windows.Forms.Padding(4);
+            this.NASifr.Multiline = true;
+            this.NASifr.Name = "NASifr";
+            this.NASifr.PasswordChar = '*';
+            this.NASifr.Size = new System.Drawing.Size(403, 29);
+            this.NASifr.TabIndex = 7;
             // 
             // NewAccount
             // 
