@@ -14,7 +14,7 @@ namespace LoginPage
 {
     public partial class Form1 : Form
     {
-        private SqlConnection sqlConnection = new SqlConnection(@"Server =.\SQLEXPRESS; Database=LoginPage; Trusted_Connection=true;TrustServerCertificate=true;");
+        private SqlConnection sqlConnection = new SqlConnection(@"Server =localhost; Database=LoginPage; Trusted_Connection=true;TrustServerCertificate=true;");
 
         public Form1()
         {
@@ -31,7 +31,7 @@ namespace LoginPage
         {
             if (IsValid())
             {
-                using (SqlConnection sqlConnection = new SqlConnection(@"Server =.\SQLEXPRESS; Database=LoginPage; Trusted_Connection=true;TrustServerCertificate=true;"))
+                using (SqlConnection sqlConnection = new SqlConnection(@"Server =localhost; Database=LoginPage; Trusted_Connection=true;TrustServerCertificate=true;"))
                 {
                     string query = "Select * from IstifadeciMelumati where IstifadeciAdi = '" + LIstAd.Text.Trim() + "' AND Sifre = '" + LSif.Text.Trim() + "'";
                     SqlDataAdapter adapter = new SqlDataAdapter(query, sqlConnection);

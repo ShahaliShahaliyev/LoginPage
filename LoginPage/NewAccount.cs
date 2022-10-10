@@ -13,7 +13,7 @@ namespace LoginPage
 {
     public partial class NewAccount : Form
     {
-        private SqlConnection sqlConnection = new SqlConnection(@"Server =.\SQLEXPRESS; Database=LoginPage; Trusted_Connection=true;TrustServerCertificate=true;");
+        private SqlConnection sqlConnection = new SqlConnection(@"Server =localhost; Database=LoginPage; Trusted_Connection=true;TrustServerCertificate=true;");
 
         public NewAccount()
         {
