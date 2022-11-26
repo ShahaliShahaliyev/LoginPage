@@ -48,6 +48,8 @@
             this.cbShow = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.NASifr = new System.Windows.Forms.TextBox();
+            this.rbIsiqli = new System.Windows.Forms.RadioButton();
+            this.rbqara = new System.Windows.Forms.RadioButton();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -307,6 +309,32 @@
             this.NASifr.Size = new System.Drawing.Size(403, 29);
             this.NASifr.TabIndex = 7;
             // 
+            // rbIsiqli
+            // 
+            this.rbIsiqli.AutoSize = true;
+            this.rbIsiqli.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.rbIsiqli.Checked = true;
+            this.rbIsiqli.Location = new System.Drawing.Point(867, 593);
+            this.rbIsiqli.Name = "rbIsiqli";
+            this.rbIsiqli.Size = new System.Drawing.Size(60, 25);
+            this.rbIsiqli.TabIndex = 28;
+            this.rbIsiqli.TabStop = true;
+            this.rbIsiqli.Text = "İşıqlı";
+            this.rbIsiqli.UseVisualStyleBackColor = false;
+            this.rbIsiqli.CheckedChanged += new System.EventHandler(this.rbIsiqli_CheckedChanged);
+            // 
+            // rbqara
+            // 
+            this.rbqara.AutoSize = true;
+            this.rbqara.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.rbqara.Location = new System.Drawing.Point(933, 593);
+            this.rbqara.Name = "rbqara";
+            this.rbqara.Size = new System.Drawing.Size(88, 25);
+            this.rbqara.TabIndex = 29;
+            this.rbqara.Text = "Qaranlıq";
+            this.rbqara.UseVisualStyleBackColor = false;
+            this.rbqara.CheckedChanged += new System.EventHandler(this.rbqara_CheckedChanged);
+            // 
             // NewAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
@@ -314,6 +342,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1029, 630);
+            this.Controls.Add(this.rbqara);
+            this.Controls.Add(this.rbIsiqli);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.NAIstAd);
             this.Controls.Add(this.groupBox5);
@@ -343,6 +373,7 @@
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -367,5 +398,7 @@
         private System.Windows.Forms.TextBox NASifr;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.CheckBox cbShow;
+        private System.Windows.Forms.RadioButton rbIsiqli;
+        private System.Windows.Forms.RadioButton rbqara;
     }
 }

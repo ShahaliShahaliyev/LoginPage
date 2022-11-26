@@ -117,5 +117,42 @@ namespace LoginPage
                 cbShow.Text = "Göstər";
             }
         }
+
+
+        private void rbIsiqli_CheckedChanged(object sender, EventArgs e)
+        {
+            groupBox1.BackColor = Color.DeepSkyBlue;
+            groupBox2.BackColor = Color.DeepSkyBlue;
+            groupBox4.BackColor = Color.DeepSkyBlue;
+            groupBox5.BackColor = Color.DeepSkyBlue;
+            groupBox7.BackColor = Color.DeepSkyBlue;
+            NACins.BackColor = Color.DeepSkyBlue;
+            NAIstAd.BackColor = Color.DeepSkyBlue;
+            groupBox1.ForeColor = Color.Black;
+            groupBox2.ForeColor = Color.Black;
+            groupBox4.ForeColor = Color.Black;
+            groupBox5.ForeColor = Color.Black;
+            groupBox7.ForeColor = Color.Black;
+            NACins.ForeColor = Color.Black;
+            NAIstAd.ForeColor = Color.Black;
+        }
+
+        private void rbqara_CheckedChanged(object sender, EventArgs e)
+        {
+            groupBox1.BackColor = Color.Black;
+            groupBox2.BackColor = Color.Black;
+            groupBox4.BackColor = Color.Black;
+            groupBox5.BackColor = Color.Black;
+            groupBox7.BackColor = Color.Black;
+            NACins.BackColor = Color.Black;
+            NAIstAd.BackColor = Color.Black;
+            groupBox1.ForeColor = Color.Red;
+            groupBox2.ForeColor = Color.Red;
+            groupBox4.ForeColor = Color.Red;
+            groupBox5.ForeColor = Color.Red;
+            groupBox7.ForeColor = Color.Red;
+            NACins.ForeColor = Color.Red;
+            NAIstAd.ForeColor = Color.Red;
+        }
     }
 }

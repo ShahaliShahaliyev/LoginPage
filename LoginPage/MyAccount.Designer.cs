@@ -86,6 +86,7 @@
             this.BtnYadda.TabIndex = 5;
             this.BtnYadda.Text = "Yadda Saxla";
             this.BtnYadda.UseVisualStyleBackColor = false;
+            this.BtnYadda.Click += new System.EventHandler(this.BtnYadda_Click);
             // 
             // btnCix
             // 

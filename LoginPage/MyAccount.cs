@@ -25,6 +25,8 @@ namespace LoginPage
             HAd.Enabled = true;
             HSoyad.Enabled = true;
             HTel.Enabled = true;
+            HAciqlama.Enabled = true;
+            BtnYadda.Enabled = true;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -45,6 +47,25 @@ namespace LoginPage
             HAd.Enabled = false;
             HSoyad.Enabled = false;
             HTel.Enabled = false;
+            HAciqlama.Enabled = false;
+            BtnYadda.Enabled = false;
+        }
+
+        private void BtnYadda_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Məlumatlar yenilənsin?","Question",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+
+            if (dr == DialogResult.Yes)
+            {
+
+            }
+
+            HAd.Enabled = false;
+            HSoyad.Enabled = false;
+            HTel.Enabled = false;
+            HAciqlama.Enabled = false;
+            BtnYadda.Enabled = false;
+
         }
     }
 }

@@ -21,6 +21,7 @@ namespace LoginPage
             InitializeComponent();
         }
 
+
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             NewAccount newAccount = new NewAccount();
@@ -72,5 +73,6 @@ namespace LoginPage
         {
             LSif.UseSystemPasswordChar = false;
         }
+
     }
 }
