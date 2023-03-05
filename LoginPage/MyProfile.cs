@@ -14,5 +14,12 @@ namespace LoginPage
         public int Telefon { get; set; }
         public string? Aciqlama { get; set; }
         public string? Qeyd { get; set; }
+        public DateTime? QeydTarixi { get; set; }
+    }
+
+    public class Qeydler
+    {
+        public string? Qeyd { get; set; }
+        public DateTime? QeydTarixi { get; set; }
     }
 }

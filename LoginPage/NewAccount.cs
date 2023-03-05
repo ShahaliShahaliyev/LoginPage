@@ -13,13 +13,15 @@ namespace LoginPage
 {
     public partial class NewAccount : Form
     {
-        private SqlConnection sqlConnection = new SqlConnection(@"Server =localhost; Database=LoginPage; Trusted_Connection=true;TrustServerCertificate=true;");
+        private SqlConnection sqlConnection = new SqlConnection(@"Server =localhost\SQLEXPRESS; Database=LoginPage; Trusted_Connection=true;TrustServerCertificate=true;");
 
         public NewAccount()
         {
             InitializeComponent();
         }
 
+
+        //CREATE ACCOUNT
         private void BHesabYar_Click(object sender, EventArgs e)
         {
 
@@ -85,6 +87,8 @@ namespace LoginPage
             sqlConnection.Close();
         }
 
+
+        //GENDER
         private string Cins;
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
@@ -96,6 +100,8 @@ namespace LoginPage
             Cins = "Qadın";
         }
 
+
+        //SUGGESTIONS
         private void NAIsAd_Click(object sender, EventArgs e)
         {
             NAIsAd.Items.Clear();
@@ -105,6 +111,8 @@ namespace LoginPage
             NAIsAd.Items.Add(NASoyAd.Text + NADT.Value.Year);
         }
 
+
+        //SHOW PASSWORD
         private void cbShow_CheckedChanged(object sender, EventArgs e)
         {
             if (cbShow.CheckState == CheckState.Checked)
@@ -119,6 +127,8 @@ namespace LoginPage
         }
 
 
+
+        //DARK
         private void rbIsiqli_CheckedChanged(object sender, EventArgs e)
         {
             groupBox1.BackColor = Color.DeepSkyBlue;

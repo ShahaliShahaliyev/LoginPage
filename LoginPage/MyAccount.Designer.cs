@@ -194,6 +194,7 @@
             this.HQeydler.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.HQeydler.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.HQeydler.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.HQeydler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.HQeydler.Location = new System.Drawing.Point(3, 272);
@@ -215,6 +216,7 @@
             this.HYeniQeyd.TabIndex = 8;
             this.HYeniQeyd.Text = "Yeni Qeyd";
             this.HYeniQeyd.UseVisualStyleBackColor = false;
+            this.HYeniQeyd.Click += new System.EventHandler(this.HYeniQeyd_Click);
             // 
             // HYeniAciq
             // 

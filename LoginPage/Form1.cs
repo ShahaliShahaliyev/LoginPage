@@ -28,11 +28,13 @@ namespace LoginPage
             newAccount.ShowDialog();
         }
 
+
+        //VALIDATION
         private void BDaxil_Click(object sender, EventArgs e)
         {
             if (IsValid())
             {
-                using (SqlConnection sqlConnection = new SqlConnection(@"Server =localhost; Database=LoginPage; Trusted_Connection=true;TrustServerCertificate=true;"))
+                using (SqlConnection sqlConnection = new SqlConnection(@"Server =localhost\SQLEXPRESS; Database=LoginPage; Trusted_Connection=true;TrustServerCertificate=true;"));
                 {
                     string query = "Select * from IstifadeciMelumati where IstifadeciAdi = '" + LIstAd.Text.Trim() + "' AND Sifre = '" + LSif.Text.Trim() + "'";
                     SqlDataAdapter adapter = new SqlDataAdapter(query, sqlConnection);
@@ -64,6 +66,8 @@ namespace LoginPage
             return true;
         }
 
+
+        //SHOW PASSWORD
         private void btnShow_MouseEnter(object sender, EventArgs e)
         {
                 LSif.UseSystemPasswordChar = true;
